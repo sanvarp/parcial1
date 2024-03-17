@@ -1,60 +1,58 @@
 .login-container {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 600px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -20px;
   }
   
-  label {
+  .login-container h1 {
+    font-weight: bold;
+  }
+  
+  .login-container label {
     display: block;
-    margin: 10px 0 5px;
-    color: #333;
-    align-self: flex-start;
-    
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: left; 
+    font-weight: bold;
   }
   
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .login-container input {
+    background-color: #D9D9D9;
+    width: 556px;
+    height: 58px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 1px;
+    border: 1px solid #ccc; 
   }
   
-  .form-button {
-    display: flex;
-    justify-content: space-between; 
-    gap: 10px;
+  .login-container input.error {
+    border: 2px solid red;
   }
   
-  button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    flex: 1; 
-    margin: 5 5px;
-  }
-  
-  button[type="submit"] {
-    background-color: #003B93;
+  .form-button button {
+    margin-right: 50px;
+    border-radius: 1px;
+    width: 253px;
+    height: 53px;
     color: white;
+    font-size: 1rem;
+    margin: 20px 10px;
   }
   
-  button[type="button"] {
+  .form-button button:first-child {
+    background-color: #003B93;
+  }
+  
+  .form-button button:last-child {
     background-color: #E75D5D;
     color: black;
   }
   
   .error-message {
     color: red;
-    text-align: center;
     margin-top: 10px;
+    font-size: 1.2rem;
   }
+  
   

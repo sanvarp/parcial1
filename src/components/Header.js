@@ -9,7 +9,6 @@ function Header() {
           <h1>TuSegundazo.com</h1>
           <img src={carImage} alt="Comercialización de Automotores Nuevos y Usados" />
         </div>
-        {/* Add any additional header content here */}
       </header>
     );
   }

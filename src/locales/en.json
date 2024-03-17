@@ -1,0 +1,20 @@
+{
+    "login.title": "Login",
+    "login.username": "Username",
+    "login.password": "Password",
+    "login.submit": "Submit",
+    "login.cancel": "Cancel",
+    "login.error": "Authentication Error. Check your credentials",
+    "carDetails.alt": "Car image",
+  "carDetails.mileage": "Mileage",
+  "carDetails.color": "Color",
+  "carDetails.reference": "Reference",
+  "carsTable.loading": "Loading...",
+  "carsTable.error": "Error loading data!",
+  "carsTable.brand": "Brand",
+  "carsTable.line": "Line",
+  "carsTable.model": "Model",
+  "color.red": "Red",
+  "color.silver": "Silver",
+  "color.white": "White"
+  }

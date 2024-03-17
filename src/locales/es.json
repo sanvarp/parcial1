@@ -1,0 +1,21 @@
+{
+    "login.title": "Iniciar Sesión",
+    "login.username": "Nombre de usuario",
+    "login.password": "Contraseña",
+    "login.submit": "Ingresar",
+    "login.cancel": "Cancelar",
+    "login.error": "Error de autenticación. Revise sus credenciales",
+    "carDetails.alt": "Imagen del carro",
+  "carDetails.mileage": "Kilometraje",
+  "carDetails.color": "Color",
+  "carDetails.reference": "Referencia",
+  "carsTable.loading": "Cargando...",
+  "carsTable.error": "¡Error al cargar los datos!",
+  "carsTable.brand": "Marca",
+  "carsTable.line": "Línea",
+  "carsTable.model": "Modelo",
+  "color.red": "Rojo",
+  "color.silver": "Plata",
+  "color.white": "Blanco"
+    
+  }

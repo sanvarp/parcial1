@@ -1,12 +1,14 @@
 import "./Login.css";
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useIntl } from 'react-intl'; 
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
   const navigate = useNavigate();
+  const intl = useIntl(); 
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,11 +19,11 @@ function Login() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ login: username, password: password }),
       });
 
       if (response.ok) {
-        navigate('/carstable'); // Cambia esto por la ruta correcta
+        navigate('/carstable');
       } else {
         setError(true);
       }
@@ -31,26 +33,35 @@ function Login() {
     }
   };
 
+
+  const handleInputFocus = () => {
+    setError(false);
+  };
+
   return (
     <div className="login-container">
-      <h1>Iniciar Sesión</h1>
+      <h1>{intl.formatMessage({ id: 'login.title' })}</h1>
       <form onSubmit={handleLogin}>
-        <label htmlFor="username">Nombre de usuario</label>
+        <label htmlFor="username">{intl.formatMessage({ id: 'login.username' })}</label>
         <input
           type="text"
           id="username"
+          className={error ? "error" : ""}
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          onFocus={handleInputFocus}
         />
-        <label htmlFor="password">Contraseña</label>
+        <label htmlFor="password">{intl.formatMessage({ id: 'login.password' })}</label>
         <input
           type="password"
           id="password"
+          className={error ? "error" : ""}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          onFocus={handleInputFocus} 
         />
         <div className="form-button">
-          <button type="submit">Ingresar</button>
+          <button type="submit">{intl.formatMessage({ id: 'login.submit' })}</button>
           <button
             type="button"
             onClick={() => {
@@ -59,15 +70,13 @@ function Login() {
               setError(false);
             }}
           >
-            Cancelar
+            {intl.formatMessage({ id: 'login.cancel' })}
           </button>
         </div>
-        {error && <div className="error-message">Las credenciales son incorrectas.</div>}
+        {error && <div className="error-message">{intl.formatMessage({ id: 'login.error' })}</div>}
       </form>
     </div>
   );
 }
-
-
 
 export default Login;

@@ -1,36 +1,100 @@
-.CarsTable-container {
+.table-container {
     width: 850px;
-    height: 400px;
-    margin: 0 auto;
+    max-height: 400px;
+    left: 50%;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-collapse: collapse;
+    overflow-y: auto;
+    text-align: left;
   }
   
-  .CarsTable {
+  .table {
     width: 100%;
-    height: 100%;
     border-collapse: collapse;
+    background-color: transparent;
   }
   
-  .CarsTable th,
-  .CarsTable td {
+  .table th,
+  .table td {
     text-align: left;
     padding: 8px;
   }
-  
-  .CarsTable thead {
-    background-color: #f2f2f2;
+  .table thead th {
+    background-color: #333 !important; 
+    color: white;
+  }
+  .table thead {
+    background-color: #333;
   }
   
-  .CarsTable th {
+  .table th {
     height: 40px;
+    border-bottom: 1px solid #ddd; 
   }
   
-  .CarsTable tbody tr:nth-child(odd) {
+  .table tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
   }
   
-  .CarsTable tbody tr:hover {
+  .table tbody tr:hover {
     background-color: #e8e8e8;
   }
+ 
+  .car-details {
+    flex: none; 
+    padding: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    width: 420px; 
+    height: auto; 
+    background-color: #D9D9D9;
+    border: 1px solid #000000; 
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    overflow: hidden; 
+  }
+  
+  .car-details h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+    width: 100%; 
+    align-self: flex-start;
+    font-weight: bold; 
+  }
+  
+  .car-details img {
+    max-width: 100%; 
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .car-specs {
+    width: 100%; 
+    box-sizing: border-box; 
+    text-align: left;
+  }
+  
+  .car-specs p {
+    margin: 5px 0; 
+    font-size: 0.9em;
+    position: relative; 
+    padding-left: 20px; 
+    font-weight: regular; 
+    width: 100%; 
+  }
+  
+  .car-specs p::before {
+    content: '→'; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  
