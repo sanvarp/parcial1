@@ -1,6 +1,6 @@
 .table-container {
-    width: 850px;
-    max-height: 400px;
+    width: 700px;
+    max-height: 310px;
     left: 50%;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@
     padding: 20px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px auto; 
-    width: 420px; 
+    width: 350px; 
     height: auto; 
     background-color: #D9D9D9;
     border: 1px solid #000000; 
@@ -69,7 +69,7 @@
   
   .car-details img {
     max-width: 100%; 
-    max-height: 150px;
+    max-height: 100px;
     object-fit: contain;
     margin-bottom: 15px;
   }

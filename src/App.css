@@ -31,7 +31,7 @@ header, footer {
   position: absolute; 
   top: 20%; 
   left: 50%;
-  transform: translate(-90%, 80%); 
+  transform: translate(-90%, 70%); 
 }
 
 .car-details {
@@ -39,5 +39,5 @@ header, footer {
   position: absolute; 
   top: 20%; 
   left: 50%;
-  transform: translate(40%, 65%); 
+  transform: translate(35%, 70%); 
 }
